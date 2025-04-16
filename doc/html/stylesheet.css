@@ -1,0 +1,15 @@
+#titlearea
+{
+	background-color: rgb(47, 78, 108);
+	color: rgb(239, 250, 255);
+}
+
+address.footer {
+	background-color: rgb(47, 78, 108);
+	color: rgb(239, 250, 255);
+}
+
+hr.footer {
+	visibility: hidden;
+}
+

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QWidget" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>993</width>
+    <height>659</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>6</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Choix de l'algorithme de parcours des particules</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,3,3">
+      <property name="leftMargin">
+       <number>3</number>
+      </property>
+      <property name="topMargin">
+       <number>3</number>
+      </property>
+      <property name="rightMargin">
+       <number>3</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <item>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string>Sans QuadTree</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>3</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="rightMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btnList">
+           <property name="text">
+            <string>Liste complète</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string>Listes extraites du QuadTree</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="leftMargin">
+          <number>3</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="rightMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btnAllFun">
+           <property name="text">
+            <string>Toutes</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnInscFun">
+           <property name="text">
+            <string>Inscrites à la vue</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnCollFun">
+           <property name="text">
+            <string>En collision avec la vue</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string>Utilisation des itérateurs du QuadTree</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>3</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="rightMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btnAllIt">
+           <property name="text">
+            <string>Toutes</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnInscIt">
+           <property name="text">
+            <string>Inscrites à la vue</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnCollIt">
+           <property name="text">
+            <string>En collision avec la vue</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="Particules" name="widget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Particules</class>
+   <extends>QWidget</extends>
+   <header>Particules.h</header>
+   <container>1</container>
+   <slots>
+    <slot>onIterAlgorithmList()</slot>
+    <slot>onIterAlgorithmQuadTreeAllFunction()</slot>
+    <slot>onIterAlgorithmQuadTreeFindInscribedFunction()</slot>
+    <slot>onIterAlgorithmQuadTreeFindCollidingFunction()</slot>
+    <slot>onIterAlgorithmQuadTreeIterators()</slot>
+    <slot>onIterAlgorithmQuadTreeInscribedIterators()</slot>
+    <slot>onIterAlgorithmQuadTreeCollidingIterators()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>btnList</tabstop>
+  <tabstop>btnAllFun</tabstop>
+  <tabstop>btnInscFun</tabstop>
+  <tabstop>btnCollFun</tabstop>
+  <tabstop>btnAllIt</tabstop>
+  <tabstop>btnInscIt</tabstop>
+  <tabstop>btnCollIt</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnList</sender>
+   <signal>pressed()</signal>
+   <receiver>widget</receiver>
+   <slot>onIterAlgorithmList()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>74</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnAllFun</sender>
+   <signal>pressed()</signal>
+   <receiver>widget</receiver>
+   <slot>onIterAlgorithmQuadTreeAllFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>206</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnInscFun</sender>
+   <signal>pressed()</signal>
+   <receiver>widget</receiver>
+   <slot>onIterAlgorithmQuadTreeFindInscribedFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>338</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnCollFun</sender>
+   <signal>pressed()</signal>
+   <receiver>widget</receiver>
+   <slot>onIterAlgorithmQuadTreeFindCollidingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>445</x>
+     <y>67</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>463</x>
+     <y>209</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnAllIt</sender>
+   <signal>pressed()</signal>
+   <receiver>widget</receiver>
+   <slot>onIterAlgorithmQuadTreeIterators()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>621</x>
+     <y>67</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>617</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnInscIt</sender>
+   <signal>pressed()</signal>
+   <receiver>widget</receiver>
+   <slot>onIterAlgorithmQuadTreeInscribedIterators()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>761</x>
+     <y>67</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>761</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnCollIt</sender>
+   <signal>pressed()</signal>
+   <receiver>widget</receiver>
+   <slot>onIterAlgorithmQuadTreeCollidingIterators()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>890</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>890</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
